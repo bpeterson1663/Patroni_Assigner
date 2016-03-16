@@ -1,0 +1,70 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/5.7.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '­-g',
+1 verbose cli   'grunt­-cli' ]
+2 info using npm@3.6.0
+3 info using node@v5.7.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData ­-g
+8 silly fetchPackageMetaData grunt­-cli
+9 silly fetchOtherPackageData ­-g
+10 silly cache add args [ '­-g', null ]
+11 verbose cache add spec ­-g
+12 silly fetchOtherPackageData grunt­-cli
+13 silly cache add args [ 'grunt­-cli', null ]
+14 verbose cache add spec grunt­-cli
+15 silly cache add parsed spec Result {
+15 silly cache add   raw: '­-g',
+15 silly cache add   scope: null,
+15 silly cache add   name: null,
+15 silly cache add   rawSpec: '­-g',
+15 silly cache add   spec: '/Users/Brady/Desktop/Prime_Digital_Academy/patroni_assigner/­-g',
+15 silly cache add   type: 'local' }
+16 silly cache add parsed spec Result {
+16 silly cache add   raw: 'grunt­-cli',
+16 silly cache add   scope: null,
+16 silly cache add   name: null,
+16 silly cache add   rawSpec: 'grunt­-cli',
+16 silly cache add   spec: '/Users/Brady/Desktop/Prime_Digital_Academy/patroni_assigner/grunt­-cli',
+16 silly cache add   type: 'local' }
+17 error addLocal Could not install /Users/Brady/Desktop/Prime_Digital_Academy/patroni_assigner/­-g
+18 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/Users/Brady/Desktop/Prime_Digital_Academy/patroni_assigner/­-g'
+18 silly fetchPackageMetaData     at Error (native)
+18 silly fetchPackageMetaData  error for ­-g { [Error: ENOENT: no such file or directory, open '/Users/Brady/Desktop/Prime_Digital_Academy/patroni_assigner/­-g']
+18 silly fetchPackageMetaData   errno: -2,
+18 silly fetchPackageMetaData   code: 'ENOENT',
+18 silly fetchPackageMetaData   syscall: 'open',
+18 silly fetchPackageMetaData   path: '/Users/Brady/Desktop/Prime_Digital_Academy/patroni_assigner/­-g' }
+19 error addLocal Could not install /Users/Brady/Desktop/Prime_Digital_Academy/patroni_assigner/grunt­-cli
+20 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/Users/Brady/Desktop/Prime_Digital_Academy/patroni_assigner/grunt­-cli'
+20 silly fetchPackageMetaData     at Error (native)
+20 silly fetchPackageMetaData  error for grunt­-cli { [Error: ENOENT: no such file or directory, open '/Users/Brady/Desktop/Prime_Digital_Academy/patroni_assigner/grunt­-cli']
+20 silly fetchPackageMetaData   errno: -2,
+20 silly fetchPackageMetaData   code: 'ENOENT',
+20 silly fetchPackageMetaData   syscall: 'open',
+20 silly fetchPackageMetaData   path: '/Users/Brady/Desktop/Prime_Digital_Academy/patroni_assigner/grunt­-cli' }
+21 silly rollbackFailedOptional Starting
+22 silly rollbackFailedOptional Finishing
+23 silly runTopLevelLifecycles Starting
+24 silly runTopLevelLifecycles Finishing
+25 silly install printInstalled
+26 verbose stack Error: ENOENT: no such file or directory, open '/Users/Brady/Desktop/Prime_Digital_Academy/patroni_assigner/­-g'
+26 verbose stack     at Error (native)
+27 verbose cwd /Users/Brady/Desktop/Prime_Digital_Academy/patroni_assigner
+28 error Darwin 15.4.0
+29 error argv "/usr/local/Cellar/node/5.7.1/bin/node" "/usr/local/bin/npm" "install" "­-g" "grunt­-cli"
+30 error node v5.7.1
+31 error npm  v3.6.0
+32 error path /Users/Brady/Desktop/Prime_Digital_Academy/patroni_assigner/­-g
+33 error code ENOENT
+34 error errno -2
+35 error syscall open
+36 error enoent ENOENT: no such file or directory, open '/Users/Brady/Desktop/Prime_Digital_Academy/patroni_assigner/­-g'
+37 error enoent ENOENT: no such file or directory, open '/Users/Brady/Desktop/Prime_Digital_Academy/patroni_assigner/­-g'
+37 error enoent This is most likely not a problem with npm itself
+37 error enoent and is related to npm not being able to find a file.
+38 verbose exit [ -2, true ]
