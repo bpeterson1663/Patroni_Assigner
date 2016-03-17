@@ -13,6 +13,7 @@ if(process.env.DATABASE_URL) {//connecting to outside heroku database
 
 
 
+
 router.post("/*", function(req,res){
 
   console.log("totally patroni routoni");
@@ -44,6 +45,47 @@ router.post("/*", function(req,res){
 
 
   res.send("you got to patroni champ");
+
+});
+
+router.get("/*", function(req,res){
+
+  console.log("hey you got get got goot patronus");
+
+  pg.connect(connectionString, function(err, client, done){
+    if (err){
+      console.log('error connecting to DB:', err);
+      res.status(500).send(err);
+      done();
+      return;
+
+    }
+    var results=[];
+    var query = client.query('SELECT * FROM tbl_patroni;');
+
+
+    query.on('row', function(row){
+      console.log("we got a row",row);
+      results.push(row);
+
+
+    });
+
+    query.on('end', function(){
+      res.send(results);
+
+      done();
+    });
+
+    query.on('error', function(error){
+      console.log("error pulling patronjus from DB:", error);
+      res.status(500).send(error);
+      done();
+
+    });
+
+
+  })
 
 });
 
