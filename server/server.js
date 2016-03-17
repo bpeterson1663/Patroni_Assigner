@@ -38,9 +38,8 @@ pg.connect(connectionString, function(err, client, done){
       query = client.query('CREATE TABLE IF NOT EXISTS tbl_people (' +
                             'person_id SERIAL PRIMARY KEY,' +
                             'first_name varchar(20) NOT NULL,' +
-                            'last_name varchar(20) NOT NULL);' +
-                            //START HERE
-                            'CONSTRAINT patronus_id integer FOREIGN KEY REFERENCES tbl_patroni(patronus_id));');
+                            'last_name varchar(20) NOT NULL,' +
+                            ' patronus_id integer REFERENCES tbl_patroni(patronus_id));');
       query.on('end', function(){
           console.log("Successfully checked tbl_people Table");
           done();
@@ -53,11 +52,7 @@ pg.connect(connectionString, function(err, client, done){
     }
 });
 
-
-
 app.use('/', index); //hi brady
-
-
 
 var server = app.listen(port, function(){
   var port = server.address().port;
