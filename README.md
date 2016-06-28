@@ -1,8 +1,9 @@
-# patroni_assigner
-Patronus Assigner
-patronus
+# Patroni_Assigner
 
-View Mockups here
+This was a group project I worked on at Prime Digital Academy with four other developers. We were to create an application using Node.js, jQuery and a SQL database to add a person to the database and then randomly assign them a Patronus animal (Harry Potter reference). 
+
+##Directions
+Patronus Assigner
 
 Goals
 
